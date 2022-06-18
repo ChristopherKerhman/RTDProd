@@ -1,0 +1,458 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Playfair+Display&family=Roboto+Serif:wght@100&display=swap');
+/*Presentation générale*/
+body {
+  font-family: 'Roboto Serif', serif;
+  height: auto;
+  width: auto;
+  margin: 0;
+    background: #F5D798ff;
+}
+h1, h2 {
+  font-size: 3em;
+  color:#F5D798ff;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+.titrePage {
+  font-size: 1.5em;
+  color: #493005ff;
+  text-transform: uppercase;
+}
+.titreEvenement {
+  font-size: 1.1em;
+    font-family: 'Cinzel', serif;
+}
+
+header {
+  background-color: hsla(38, 87%, 15%, 0.5);
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+
+}
+.article {
+  text-align: justify;
+  margin-left: auto;
+}
+.articleIndex {
+  text-align: justify;
+  margin-left: auto;
+}
+/*Liste*/
+.listeUser {
+  list-style: none;
+  text-align: left;
+}
+
+
+.listeUser li {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+ul {
+  list-style: none;
+}
+.marginBottom {
+  padding-bottom: 0.5em;
+}
+/*Fin liste*/
+/*Grid Index*/
+.container {
+  display: grid;
+  width: 100%
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.7fr 0.5fr;
+  grid-template-rows: 0fr 0fr;
+  gap: 0px 0px;
+  grid-template-areas:
+  "articleGrid archive"
+  "partie partie";
+
+}
+.partie { grid-area: partie; }
+.articleGrid { grid-area: articleGrid; }
+.archive { grid-area: archive; }
+
+/*Tableau*/
+.compta {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+}
+
+.compta th {
+    text-align: left;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.2em;
+    border-right: 1px solid black;
+}
+th::first-letter {
+  text-transform: capitalize;
+}
+.compta td {
+  border-right: 1px solid black;
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.compta tr {
+  border-bottom: 1px solid black;
+}
+.compta tr td {
+  text-align: center;
+}
+#archive {
+  background-color: #704F2Fff;
+  color:#F5D798ff;
+}
+#nonValide {
+  background-color: #341A13ff;
+  color:#F5D798ff;
+}
+#number {
+  text-align: center;
+}
+
+/*Effet de paralaxe*/
+.parallax-effect {
+  background-image: url("../images/rollMap.webp");
+  min-height: 15vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+.main {
+  height: auto;
+  background: #F5D798ff;
+  text-align: center;
+  min-height:600px;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+/*Fin effet de paralaxe*/
+/*Footer*/
+
+.calque {
+  min-height: 200%;
+  font-weight: 600;
+  font-size: 1.2em;
+  background-color: hsla(264, 15%, 19%, 0.55);
+  width: auto;
+  color: #F5D798ff;
+  padding: 0.25em;
+}
+/*Footer*/
+/*Flex*/
+.flex-colonne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ligne {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.line {
+  /* text-align: end; */
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-wrap: nowrap;
+}
+/*boxed*/
+.blackBox {
+  border: 2px solid #341A13ff;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.profilFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+/*Navigation*/
+/*Navigation bandeau*/
+.navigationBandeau {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navigationBandeau li {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: center;
+}
+/*Bouton lien*/
+.lienNav {
+  text-decoration: none;
+   background-color: #DFA14Aff;
+  border: 3px solid #CA8339ff;
+  font-family: 'Cinzel', serif;
+  color: #070000ff;
+  border-radius: 5px;
+  padding: auto;
+  cursor: auto;
+  font-weight: 600;
+  padding: 0.25em;
+  margin: 0.25em;
+  transition: border 0.7s;
+}
+.lienNav:hover {
+   border: 3px solid #302A39ff;
+   transition: border 0.7s;
+}
+/*Menu bandeau Tester sur un autre projet*/
+.dropdown {
+/* position: absolute; */
+display: inline-block;
+}
+.dropdown-child {
+position: absolute;
+display: none;
+min-width: 50px;
+}
+/* .dropdown-child a {
+color: white;
+padding: 20px;
+text-decoration: none;
+display: block;
+} */
+.dropdown-child a {
+  text-decoration: none;
+  display: block;
+  background-color: #DFA14Aff;
+  border: 3px solid #CA8339ff;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  color: #070000ff;
+  border-radius: 5px;
+  padding: 0.25em;
+  margin: 0.25em;
+  cursor: auto;
+  font-weight: 600;
+  margin: 0.25em;
+  transition: border 0.7s;
+}
+.dropdown:hover .dropdown-child {
+display: block;
+transition: display 3s;
+}
+
+
+/*Formulaire*/
+input, select, textarea {
+  margin: 0.5em 0 0.5em 0;
+  background-color: #F5D798ff;
+  border: 3px solid #302A39ff;
+  font-size: 1.2em;
+  color: #493005ff;
+}
+label {
+    font-family: 'Roboto Serif', serif;
+    font-weight:bolder;
+}
+
+/*Bouton formulaire*/
+.buttonForm {
+  background-color: #DFA14Aff;
+  border: 3px solid #CA8339ff;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  color: #070000ff;
+  border-radius: 5px;
+  padding: 0.25em;
+  margin: 0.25em;
+  cursor: auto;
+  font-weight: 600;
+  margin: 0.25em;
+  transition: border 0.7s;
+}
+.buttonForm:hover {
+   border: 3px solid #302A39ff;
+   transition: border 0.7s;
+}
+/*Fin présentation générale*/
+/*Block événement*/
+.gallery {
+ margin: 100px auto 0;
+ padding: 0 10px;
+  max-width:100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+  grid-gap: 10px;
+  justify-content: center;
+}
+.item {
+  min-height: 500px;
+  min-width: 500px;
+  background: #B27E3Dff;
+  color: #493005ff;
+  font-size: 1.5em;
+   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E9C46A;
+  border-radius: 5px;
+  }
+.listeEvenement {
+  margin: 0.5em;
+  padding: 0;
+}
+.listeEvenement li {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+.listeMembreInscrit {
+  text-align: left;
+  margin-bottom: 1em;
+}
+#message {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  /*Portrait*/
+  body {
+      width: revert;
+    }
+
+    .parallax-effect {
+      min-height: 100%;
+    }
+    .calque {
+      display: block;
+    }
+    h1, h2, h3, h4 {
+      font-size: 1.2em;
+    }
+    .navigationBandeau {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .navigationBandeau li {
+      margin-bottom: 1.2em;
+    }
+    .lienNav, .buttonForm  {
+      font-size: 0.7em;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .gallery {
+      display: flex;
+      flex-direction: column;
+    }
+    .item {
+      font-size: 0.85em;
+      min-height: auto;
+      min-width: auto;
+      align-items: center;
+    }
+    .flex-colonne div {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    select {
+      font-size: 0.75em;
+    }
+    textarea {
+      max-width: inherit;
+    }
+    .profilFlex {
+      flex-direction: column;
+    }
+    .compta {
+      display: none;
+    }
+    #message {
+      text-align: center;
+      display: block;
+      font-size: 1.2em;
+    }
+
+}
+@media only screen and (max-width: 950px) {
+  /*Paysage*/
+  .compta {
+    font-size: 0.8em;
+    max-width: 100%;
+  }
+  .container .archive .lienNav {
+    font-size: 0.6em;
+  }
+  .item {
+    font-size: 0.85em;
+    min-height: auto;
+    min-width: auto;
+    align-items: center;
+  }
+  .profilFlex {
+    flex-direction: column;
+  }
+  tr {
+    font-size: 0.8em;
+  }
+}
+@media only print {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  .main h3 {
+    display: none;
+  }
+  .titrePage {
+    color: black;
+  }
+  main {
+    color: black;
+  }
+  #number {
+    font-weight: 700;
+  }
+  #messagePrint {
+    display: none;
+  }
+  #messagePrintYes {
+    display: block;
+  }
+}
